@@ -1,0 +1,496 @@
+/* ========================= Google Font Inter ========================= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+/* ================================Common style===================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  color: #181818;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+img {
+  vertical-align: middle;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+ul,
+li ol {
+  list-style: none;
+}
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #181818;
+}
+.titleDecription {
+  line-height: 27px;
+  color: rgba(24, 24, 24, 0.7);
+  text-align: center;
+  max-width: 542px;
+}
+/* ================================Common style===================================== */
+
+/* ================================Navbar style===================================== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 0px;
+}
+.navbar ul {
+  display: flex;
+  gap: 50px;
+}
+.navbar a {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration: none;
+  position: relative;
+}
+.navbar li a:hover {
+  color: #5956e8;
+}
+.navbar li a::before {
+  width: 100%;
+  height: 3px;
+  background: #5956e8;
+  position: absolute;
+  content: "";
+  bottom: 0;
+  transform: scale(0);
+  transition: all 0.3s ease;
+  border-radius: 20px;
+}
+.navbar a:hover::before {
+  color: #5956e8;
+  transform: scale(1);
+}
+.navbar button {
+  background: #5956e8;
+  border-radius: 10px;
+  padding: 13px 24px;
+  border: none;
+  color: #fff;
+  font-size: 1.125rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar button:hover {
+  background-image: linear-gradient(to bottom, #0a06ed, #5956e8);
+}
+/* ================================Navbar style===================================== */
+
+/* ================================Hero Section CSS===================================== */
+#HeroSection {
+  background: #5956e8;
+  padding: 182px 0px;
+}
+.HeroSection_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+.leftSide {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+}
+.leftSide h1 {
+  font-size: 4.05rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 80px;
+}
+.leftSide p {
+  color: #fff;
+  line-height: 27px;
+}
+.leftSide button {
+  padding: 13px 22px;
+  font-size: 1.125rem;
+  color: #5956e8;
+  line-height: normal;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+}
+.leftSide button:hover {
+  background: #6360e2;
+  border: 0px solid black;
+  color: #fff;
+  box-shadow: 5px 3px 13px #7b7979;
+}
+/* ================================Hero Section CSS===================================== */
+
+/* ================================Our Services CSS===================================== */
+.ServicesContant {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+/* ================================Our Services CSS===================================== */
+
+/* ================================Service Card CSS===================================== */
+.service {
+  padding: 65px 0px;
+}
+.ourServices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.serviceCard {
+  max-width: 370px;
+  border-radius: 10px;
+  border: 0.5px solid #e3e3e3;
+  padding: 63px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+  align-items: flex-start;
+  transition: linear 0.2s;
+}
+.serviceCard span {
+  padding: 17px;
+  border-radius: 10px;
+  border: 0.5px solid #5956e8;
+}
+.serviceCard i {
+  color: #5956e8;
+  font-size: 2rem;
+}
+.serviceCard h3 {
+  color: #181818;
+  font-size: 1.56rem;
+  font-weight: 700;
+}
+.serviceCard p {
+  color: rgba(24, 24, 24, 0.7);
+  line-height: 27px;
+}
+.serviceCard:hover {
+  box-shadow: 0px 6px 35px 0px #5956e8;
+}
+.serviceCard:hover span {
+  background-color: #5956e8;
+}
+.serviceCard:hover i {
+  color: #fff;
+}
+/* ================================Service Card CSS===================================== */
+
+/* ================================Portfolio CSS===================================== */
+.PortfolioImg__Hover {
+  position: relative;
+}
+.OurPortfolio {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.PortfolioImg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 50px 0px;
+}
+.PortfolioImg img {
+  max-width: 270px;
+  max-height: 320px;
+}
+.hoverDetails {
+  background: #5956e8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 230px;
+  padding: 25px 40px;
+  border-radius: 10px;
+  position: absolute;
+  transform: scale(0);
+  transition: cubic-bezier(0.23, 1, 0.32, 1) 0.5s;
+}
+.PortfolioImg__Hover:hover .hoverDetails {
+  transform: scale(1) translateY(-120%) translateX(10%);
+}
+.hoverDetails h5 {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 27px;
+}
+.hoverDetails a,
+.hoverDetails i {
+  color: #fff;
+}
+/* ================================Portfolio CSS===================================== */
+
+/* ================================Expert Member CSS===================================== */
+.expertMember__Contanct {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.expertMember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+  margin-top: 40px;
+  position: relative;
+}
+.Member {
+  max-width: 370px;
+  position: relative;
+}
+.Member img {
+  width: 100%;
+  height: 10%;
+}
+.overlyTitle {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+.overlyTitle h3 {
+  font-size: 1.25rem;
+  color: #fff;
+  width: 600;
+  line-height: 27px;
+}
+.overlyTitle p {
+  color: #fff;
+  line-height: 27px;
+}
+.Member:hover .overlyTitle {
+  opacity: 1;
+}
+.overly {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(
+    0deg,
+    #5956e8 -1.13%,
+    rgba(255, 255, 255, 0) 58.11%
+  );
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.Member:hover .overly {
+  opacity: 1;
+  bottom: 100;
+}
+/* ================================Expert Member CSS===================================== */
+
+/* ================================Customer Care CSS===================================== */
+.customerContant {
+  max-width: 542px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin-top: 100px;
+}
+.customerDescription {
+  color: rgba(24, 24, 24, 0.7);
+  line-height: 27px;
+}
+.experienceCardContainer {
+  margin-top: 50px;
+  display: flex;
+  column-gap: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.experienceCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 370px;
+  padding: 48px;
+  row-gap: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 6px 35px 0px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+.experienceCard img {
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+}
+.experienceCard i {
+  color: #fbbf25;
+}
+.experienceCard p {
+  color: rgba(24, 24, 24, 0.7);
+  line-height: 27px;
+}
+.experienceCard h5 {
+  color: #181818;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 27px;
+}
+.rightIcon {
+  position: absolute;
+  bottom: 0;
+  font-size: 4rem;
+  right: 10%;
+}
+/* ================================Customer Care CSS===================================== */
+
+/* ================================Letest News CSS===================================== */
+.LetestNewsContainer {
+  margin-top: 150px;
+}
+.newsContant {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.NewsCardContainer {
+  margin-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.NewsCard {
+  max-width: 370px;
+  padding: 17px 19px 45px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 10px;
+  border: 1px solid #e3e3e3;
+  background: #fff;
+}
+.NewsCard img {
+  width: 100%;
+}
+.adminDate {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+.admin {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.admin i,
+.admin p {
+  color: #5d5d5d;
+  line-height: 27px;
+}
+.date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.date i,
+.date p {
+  color: #5d5d5d;
+  line-height: 27px;
+}
+.NewsCard h5 {
+  font-size: 1.25rem;
+  max-width: 270px;
+  font-weight: 600;
+}
+.NewsCard p {
+  color: #5d5d5d;
+  line-height: 27px;
+}
+.NewsCard a {
+  color: #5956e8;
+  font-weight: 600;
+}
+/* ================================Letest News CSS===================================== */
+
+/* ================================Footer CSS===================================== */
+footer {
+  background: #5956e81a;
+  padding: 100px 0px;
+  margin-top: 100px;
+}
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.footerWithLogo {
+  max-width: 300px;
+}
+.footerContant {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.footerContant img {
+  width: 100px;
+  height: 100%;
+}
+.footerContant h5 {
+  font-size: 1.25rem;
+}
+.footerContant p {
+  color: #5d5d5d;
+  line-height: 27px;
+}
+.socialIcon {
+  display: flex;
+  column-gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+}
+.socialIcon span {
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+.socialIcon .facebook {
+  color: #337fff;
+}
+.socialIcon .twitter {
+  color: #33ccff;
+}
+.footerContant a {
+  color: #5d5d5d;
+  line-height: 27px;
+}
+.footerContant a:hover {
+  color: #5956e8;
+  font-weight: 700;
+}
+/* ================================Footer CSS===================================== */
